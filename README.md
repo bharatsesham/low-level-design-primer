@@ -39,6 +39,27 @@ Feel free to submit pull requests to help:
 * Improve sections
 * Add new sections
 
+## Index of low-level design topics
+
+* [Low-level design topics: start here](#low-level-design-topics-start-here)
+* [Design Patterns](#design-patterns)
+* [Appendix](#appendix)
+* [Under development](#under-development)
+* [Credits](#credits)
+* [Contact info](#contact-info)
+* [Inspiration](#inspiration)
+* [License](#license)
+
+## Design Patterns
+
+>**Note: This section is under development**
+
+## Under development
+
+Interested in adding a new section or helping complete one in-progress?  Feel free to [Contribute](#contributing)!
+
+* Design Patterns
+
 ## Inspiration 
 
 Inspired from [System Design Primer](https://github.com/donnemartin/system-design-primer)
