@@ -28,3 +28,17 @@ Low-level design (LLD) is a componenet-level design process and is frequently us
 | Design an ATM | [Contribute](#contributing) |
 | Design a Hotel Management System | [Contribute](#contributing) |
 | Add a system design question | [Contribute](#contributing) |
+
+## Contributing
+
+> Learn from the community.
+
+Feel free to submit pull requests to help:
+
+* Fix errors
+* Improve sections
+* Add new sections
+
+## Inspiration 
+
+Inspired from [System Design Primer](https://github.com/donnemartin/system-design-primer)
