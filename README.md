@@ -17,9 +17,9 @@ Low-level design (LLD) is a componenet-level design process and is frequently us
 | Question | |
 |---|---|
 | Design a Parking Lot | [Solution](https://github.com/donnemartin/system-design-primer/blob/master/solutions/object_oriented_design/parking_lot/parking_lot.ipynb) |
+| Design Poker Game - Under Development | [Solution](https://github.com/bharatsesham/low-level-design-primer/blob/main/solutions/poker_game.ipynb) |
 | Design an Online Shopping Platform | [Contribute](#contributing) |
 | Design a Movie Ticket Booking System | [Contribute](#contributing) |
-| Design Poker | [Contribute](#contributing) |
 | Design Facebook | [Contribute](#contributing) |
 | Design a Car Rental System | [Contribute](#contributing) |
 | Design an Online Stock Brokerage System | [Contribute](#contributing) |
