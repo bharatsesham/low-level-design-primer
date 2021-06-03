@@ -42,13 +42,43 @@ Feel free to submit pull requests to help:
 ## Index of low-level design topics
 
 * [Low-level design topics: start here](#low-level-design-topics-start-here)
+    * [Step 1: Object Oriented Basics](#step-1-object-oriented-basics)
+    * [Step 2: Object Oriented Analysis and Design](#step-2-object-oriented-analysis-and-design)
+    * [Step 3: UML and Diagrams](#step-3-uml-and-diagrams)
+    * [Next steps](#next-steps)
+* [Programming Logic](#programming-logic)
+    * [Basics](#basics)
+    * [Algorithms](#algorithms)
+    * [Data Structures](#data-structures)
 * [Design Patterns](#design-patterns)
+* [Architectural Patterns](#architectural-patterns)
 * [Appendix](#appendix)
 * [Under development](#under-development)
 * [Credits](#credits)
 * [Contact info](#contact-info)
+* [Additional Resources](#additional-resources)
 * [Inspiration](#inspiration)
 * [License](#license)
+
+
+## Low-level design topics: start here
+
+New to low-level design?
+
+First, you'll need a basic understanding of OOPS concepts, learning about what they are, how they are used, and their pros and cons.
+
+### Step 1: Object Oriented Basics
+
+### Step 2: Object Oriented Analysis and Design
+
+### Step 3: UML and Diagrams
+
+* Topics covered:
+    * Use Case Diagrams
+    * Class Diagram
+    * Sequence Diagram
+    * Activity Diagrams
+
 
 ## Design Patterns
 
@@ -58,8 +88,13 @@ Feel free to submit pull requests to help:
 
 Interested in adding a new section or helping complete one in-progress?  Feel free to [Contribute](#contributing)!
 
-* Design Patterns
+
+## Additional Resources
+
+* [Grokking the Object Oriented Design Interview](https://github.com/tssovi/grokking-the-object-oriented-design-interview)
 
 ## Inspiration 
 
 Inspired from [System Design Primer](https://github.com/donnemartin/system-design-primer)
+
+
