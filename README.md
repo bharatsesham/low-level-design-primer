@@ -79,6 +79,34 @@ First, you'll need a basic understanding of OOPS concepts, learning about what t
     * Sequence Diagram
     * Activity Diagrams
 
+## Programming Logic
+
+In this topic, we will concentrate on the brains of the problem solution. While design components are important, logic is what determines how a software works. The logic often composed of various algorithms and data strucutres. Also, data structures and algorithms play a major role in the hiring process as well. In this section, the idea is to go over some of the popular algorithms and data structures that are crucial for any aspiring software engineer. We can start off the discussion by discussing some of the basics concepts like Time and Space complexity which can be used to analyse the performance of the algorithms. 
+
+### Basics
+
+### Algorithms
+
+### Data Structures
+
+* Basic Data Structures
+    * Sets
+    * Stacks
+    * Queues
+    * Arrays 
+    * LinkedLists
+    * HashMaps
+    * Heaps
+
+* Advanced Data Structures
+    * Trees
+    * Binary Search Trees
+    * m-Array Trees
+    * B-Trees
+    * Binomial Heaps
+    * Fibonacci Heaps
+    * Red-Black Trees
+    * Graphs
 
 ## Design Patterns
 
