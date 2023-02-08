@@ -1,6 +1,6 @@
 # The Low-level Design Primer
- 
-Low-level design (LLD) is a componenet-level design process and is frequently used while designing data structures, and algorithms.  It is also known as Object-Oriented Design (OOD), micro-level/detailed design. In general, a low-level design consists of class diagrams, program specifications and other low-level details for a given software componenet. During the LLD phase, the actual software components are designed by defining the logical and functional segments whereas design of application structure is developed during the high=level design phase. Low-level design is often created based on the high-level design. 
+
+Low-level design (LLD) is a componenet-level design process and is frequently used while designing data structures, and algorithms. It is also known as Object-Oriented Design (OOD), micro-level/detailed design. In general, a low-level design consists of class diagrams, program specifications and other low-level details for a given software componenet. During the LLD phase, the actual software components are designed by defining the logical and functional segments whereas design of application structure is developed during the high=level design phase. Low-level design is often created based on the high-level design.
 
 ## Motivation
 
@@ -14,20 +14,20 @@ Low-level design (LLD) is a componenet-level design process and is frequently us
 >
 > Solutions linked to content in the `solutions/` folder.
 
-| Question | |
-|---|---|
-| Design a Parking Lot | [Solution](https://github.com/donnemartin/system-design-primer/blob/master/solutions/object_oriented_design/parking_lot/parking_lot.ipynb) |
-| Design Poker Game - Under Development | [Solution](https://github.com/bharatsesham/low-level-design-primer/blob/main/solutions/poker_game.ipynb) |
-| Design an Online Shopping Platform | [Contribute](#contributing) |
-| Design a Movie Ticket Booking System | [Contribute](#contributing) |
-| Design Facebook | [Contribute](#contributing) |
-| Design a Car Rental System | [Contribute](#contributing) |
-| Design an Online Stock Brokerage System | [Contribute](#contributing) |
-| Design Blackjack | [Contribute](#contributing) |
-| Design an Airline Management System | [Contribute](#contributing) |
-| Design an ATM | [Contribute](#contributing) |
-| Design a Hotel Management System | [Contribute](#contributing) |
-| Add a system design question | [Contribute](#contributing) |
+| Question                                |                                                                                                                                            |
+| --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| Design a Parking Lot                    | [Solution](https://github.com/donnemartin/system-design-primer/blob/master/solutions/object_oriented_design/parking_lot/parking_lot.ipynb) |
+| Design Poker Game - Under Development   | [Solution](https://github.com/bharatsesham/low-level-design-primer/blob/main/solutions/poker_game.ipynb)                                   |
+| Design an Online Shopping Platform      | [Contribute](#contributing)                                                                                                                |
+| Design a Movie Ticket Booking System    | [Contribute](#contributing)                                                                                                                |
+| Design Facebook                         | [Contribute](#contributing)                                                                                                                |
+| Design a Car Rental System              | [Contribute](#contributing)                                                                                                                |
+| Design an Online Stock Brokerage System | [Contribute](#contributing)                                                                                                                |
+| Design Blackjack                        | [Contribute](#contributing)                                                                                                                |
+| Design an Airline Management System     | [Contribute](#contributing)                                                                                                                |
+| Design an ATM                           | [Contribute](#contributing)                                                                                                                |
+| Design a Hotel Management System        | [Contribute](#contributing)                                                                                                                |
+| Add a system design question            | [Contribute](#contributing)                                                                                                                |
 
 ## Contributing
 
@@ -35,33 +35,32 @@ Low-level design (LLD) is a componenet-level design process and is frequently us
 
 Feel free to submit pull requests to help:
 
-* Fix errors
-* Improve sections
-* Add new sections
+- Fix errors
+- Improve sections
+- Add new sections
 
 ## Index of low-level design topics
 
-* [Low-level design topics: start here](#low-level-design-topics-start-here)
-    * [Step 1: Object Oriented Basics](#step-1-object-oriented-basics)
-    * [Step 2: Object Oriented Analysis and Design](#step-2-object-oriented-analysis-and-design)
-    * [Step 3: UML and Diagrams](#step-3-uml-and-diagrams)
-    * [Step 4: Distributed Systems Concepts]()
-    * [Step 5: Security Basics]()
-    * [Next steps](#next-steps)
-* [Programming Logic](#programming-logic)
-    * [Basics](#basics)
-    * [Algorithms](#algorithms)
-    * [Data Structures](#data-structures)
-* [Design Patterns](#design-patterns)
-* [Architectural Patterns](#architectural-patterns)
-* [Appendix](#appendix)
-* [Under development](#under-development)
-* [Credits](#credits)
-* [Contact info](#contact-info)
-* [Additional Resources](#additional-resources)
-* [Inspiration](#inspiration)
-* [License](#license)
-
+- [Low-level design topics: start here](#low-level-design-topics-start-here)
+  - [Step 1: Object Oriented Basics](#step-1-object-oriented-basics)
+  - [Step 2: Object Oriented Analysis and Design](#step-2-object-oriented-analysis-and-design)
+  - [Step 3: UML and Diagrams](#step-3-uml-and-diagrams)
+  - [Step 4: Distributed Systems Concepts]()
+  - [Step 5: Crptography]()
+  - [Next steps](#next-steps)
+- [Programming Logic](#programming-logic)
+  - [Basics](#basics)
+  - [Algorithms](#algorithms)
+  - [Data Structures](#data-structures)
+- [Design Patterns](#design-patterns)
+- [Architectural Patterns](#architectural-patterns)
+- [Appendix](#appendix)
+- [Under development](#under-development)
+- [Credits](#credits)
+- [Contact info](#contact-info)
+- [Additional Resources](#additional-resources)
+- [Inspiration](#inspiration)
+- [License](#license)
 
 ## Low-level design topics: start here
 
@@ -75,18 +74,118 @@ First, you'll need a basic understanding of OOPS concepts, learning about what t
 
 ### Step 3: UML and Diagrams
 
+- Topics covered:
+  - Use Case Diagrams
+  - Class Diagram
+  - Sequence Diagram
+  - Activity Diagrams
+
 ### Step 4: Distributed Systems Concepts
 
+### Step 5: Cryptography
 
-* Topics covered:
-    * Use Case Diagrams
-    * Class Diagram
-    * Sequence Diagram
-    * Activity Diagrams
+\
+Cryptography is the practice of securely communicating information by transforming it into an unreadable format (ciphertext) to prevent unauthorized access. Cryptography can be divided into two main categories: classical cryptography and modern cryptography. Classical cryptography uses techniques such as substitution ciphers and transposition ciphers, while modern cryptography uses mathematical algorithms and computer technology to provide stronger security. Some common applications of cryptography include secure communication over the internet, data protection, and digital signatures. Some of the concepts related to cryptography are:
+
+1.  Encryption: The process of transforming plaintext into an unreadable format (ciphertext) using an encryption algorithm and a key. The ciphertext can only be decrypted back into its original form using the same key. There are several types of encryption, including:
+
+    - Symmetric encryption: Also known as shared secret encryption, uses the same key for both encryption and decryption. Examples include AES, DES, and Blowfish.
+
+    - Asymmetric encryption: Also known as public key encryption, uses a pair of keys – one for encryption and another for decryption. Examples include RSA, Elliptic Curve Cryptography (ECC), and Diffie-Hellman.
+
+    - Stream cipher: Encrypts data one bit or byte at a time, making it more suitable for real-time applications such as video and audio streaming. Examples include RC4 and Salsa20.
+
+    - Block cipher: Encrypts data in fixed-size blocks, making it more suitable for encrypting large amounts of data. Examples include AES and DES.
+
+    - Hash functions: A type of encryption that creates a fixed-length, unique value from an input message. Hash functions are commonly used for digital signatures, message authentication codes, and password storage. Examples include SHA-256, MD5, and SHA-3.
+
+    - Elliptic Curve Cryptography (ECC): A type of public key encryption that uses the mathematics of elliptic curves to provide stronger security compared to traditional algorithms.
+
+    - Homomorphic encryption: A type of encryption that allows computations to be performed on ciphertext, producing an encrypted result which, when decrypted, is the same as if the computation was performed on plaintext.
+
+2.  Decryption: The process of transforming ciphertext back into its original form (plaintext) using the same key and decryption algorithm used for encryption.
+
+3.  Key: A secret value used in the encryption and decryption process to control the transformation of plaintext into ciphertext and vice versa. The key is used to control the strength of the encryption and ensure that the ciphertext can only be decrypted by authorized individuals.
+
+4.  Algorithm: A set of mathematical steps and rules used to encrypt and decrypt data. Cryptographic algorithms are divided into symmetric (using the same key for encryption and decryption) and asymmetric (using a pair of keys for encryption and decryption). Some of the commonly used cryptographic algorithms are:
+
+    - Symmetric Key Algorithms:
+
+      - Advanced Encryption Standard (AES)
+      - Data Encryption Standard (DES)
+      - Blowfish
+      - Twofish
+
+        <br/>
+
+    - Asymmetric Key Algorithms (Public Key Cryptography):
+
+      - Rivest-Shamir-Adleman (RSA)
+      - Elliptic Curve Cryptography (ECC)
+      - Digital Signature Algorithm (DSA)
+      - Elliptic Curve Digital Signature Algorithm (ECDSA)
+
+        <br/>
+
+    - Hash Functions:
+
+      - Message Digest Algorithm 5 (MD5)
+      - Secure Hash Algorithm (SHA)
+      - SHA-256
+      - SHA-3
+
+        <br/>
+
+    - Key Derivation Functions (KDFs):
+
+      - PBKDF2 (Password-Based Key Derivation Function 2)
+      - scrypt
+      - Argon2
+
+        <br/>
+
+    - Stream Ciphers:
+      - RC4
+      - Salsa20
+      - ChaCha20
+
+    <br/>
+
+    These are just a few examples of cryptographic algorithms. The selection of the appropriate algorithm depends on the specific security requirements of the application and the amount of computational resources available. Cryptographic algorithms are constantly being improved and updated to provide stronger security, and new algorithms are being developed as the need for stronger security arises.
+
+5.  Cryptanalysis: The study and practice of analyzing and breaking cryptographic systems. Cryptanalysts use mathematical and computational methods to attempt to crack cryptographic systems and gain access to the original plaintext.
+
+6.  Key management: The process of generating, distributing, and storing keys in a secure manner to ensure the confidentiality, integrity, and authenticity of encrypted data.
+
+7.  Cryptographic protocols: Sets of rules and procedures used to securely communicate information and perform cryptographic operations, such as digital signatures and secure key exchange. Some of the common cryptographic protocols are:
+
+    - Secure Socket Layer (SSL) / Transport Layer Security (TLS): A protocol used to secure web communications, including email and online transactions.
+
+    - Internet Protocol Security (IPSec): A protocol used to secure Internet Protocol (IP) communications, including Virtual Private Network (VPN) connections.
+
+    - Pretty Good Privacy (PGP): A protocol used to encrypt and sign emails, files, and other types of data.
+
+    - Secure Shell (SSH): A protocol used to securely access remote servers and network devices.
+
+    - File Transfer Protocol Secure (FTPS): A protocol used to securely transfer files over the internet.
+
+    - Wireless Protected Access (WPA): A protocol used to secure wireless networks.
+
+    - Digital Signature Algorithm (DSA): A protocol used to generate digital signatures, which can be used to verify the authenticity and integrity of electronic documents and messages.
+
+    - Elliptic Curve Digital Signature Algorithm (ECDSA): A protocol used to generate digital signatures using the mathematics of elliptic curves.
+
+    - Secure Remote Password (SRP): A protocol used to securely authenticate users over the internet, without sending passwords in the clear.
+
+    - Kerberos: A protocol used to securely authenticate users on computer networks.
+
+    These are just a few examples of cryptographic protocols. The selection of the appropriate protocol depends on the specific security requirements of the communication or operation being performed.
+
+<br />
 
 ## Programming Logic
 
-In this topic, we will concentrate on the brains of the problem solution. While design components are important, logic is what determines how a software works. The logic often composed of various algorithms and data strucutres. Also, data structures and algorithms play a major role in the hiring process as well. In this section, the idea is to go over some of the popular algorithms and data structures that are crucial for any aspiring software engineer. We can start off the discussion by discussing some of the basics concepts like Time and Space complexity which can be used to analyse the performance of the algorithms. 
+In this topic, we will concentrate on the brains of the problem solution. While design components are important, logic is what determines how a software works. The logic often composed of various algorithms and data strucutres. Also, data structures and algorithms play a major role in the hiring process as well. In this section, the idea is to go over some of the popular algorithms and data structures that are crucial for any aspiring software engineer. We can start off the discussion by discussing some of the basics concepts like Time and Space complexity which can be used to analyse the performance of the algorithms.
 
 ### Basics
 
@@ -112,7 +211,7 @@ In this topic, we will concentrate on the brains of the problem solution. While 
 
 10. NP-hard and NP-complete problems: Algorithms for solving some of the most difficult problems in computer science, such as the Traveling Salesman Problem and the Boolean Satisfiability Problem.
 
-More specific algorithms: 
+More specific algorithms:
 
 1. Matrix algorithms: Algorithms for processing matrices, such as Gaussian elimination and LU decomposition.
 
@@ -154,29 +253,15 @@ More specific algorithms:
 
 20. Deep learning algorithms: Algorithms that use deep neural networks to learn from data, such as Convolutional Neural Networks (CNNs) and Recurrent Neural Networks (RNNs).
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### Data Structures
 
- Data structures are a way of organizing and storing data in a computer program. There are several commonly used data structures in computer science, including:
-
+Data structures are a way of organizing and storing data in a computer program. There are several commonly used data structures in computer science, including:
 
 #### Basic Data Structuree
 
 The basic data structures used in computer science include:
 
-* **LinkedList** - A linked list is a linear data structure where each element, called a node, points to the next node in the list. It consists of a head, which points to the first node, and a tail, which points to the last node. The nodes contain a value and a reference to the next node. Linked lists can be used to implement various abstract data types like stacks, queues, and associative arrays. The advantage of linked lists over arrays is that elements can be efficiently inserted or removed without reallocation or reorganization of the entire structure because only a few links need to be changed.
+- **LinkedList** - A linked list is a linear data structure where each element, called a node, points to the next node in the list. It consists of a head, which points to the first node, and a tail, which points to the last node. The nodes contain a value and a reference to the next node. Linked lists can be used to implement various abstract data types like stacks, queues, and associative arrays. The advantage of linked lists over arrays is that elements can be efficiently inserted or removed without reallocation or reorganization of the entire structure because only a few links need to be changed.
 
 Some of the use-cases of linkedlist are:
 
@@ -194,10 +279,9 @@ Some of the use-cases of linkedlist are:
 
 7. Circular Linked Lists: Circular linked lists can be used to implement certain data structures like hash tables, where indexing is based on the value of a key modulo the size of the hash table.
 
+- **Set** - A set is a collection of unique elements. Sets are commonly used in computer science to store and manipulate collections of elements without duplicates. In programming, sets are usually implemented using a hash table or a tree structure. This allows for efficient operations such as add, remove, and search in constant time, on average. Some common use cases for sets include checking for duplicates in a collection, performing set operations such as union, intersection, and difference, and testing for membership in a collection.
 
-* **Set** - A set is a collection of unique elements. Sets are commonly used in computer science to store and manipulate collections of elements without duplicates. In programming, sets are usually implemented using a hash table or a tree structure. This allows for efficient operations such as add, remove, and search in constant time, on average. Some common use cases for sets include checking for duplicates in a collection, performing set operations such as union, intersection, and difference, and testing for membership in a collection.
-
-Some of the use-cases of sets are: 
+Some of the use-cases of sets are:
 
 1. Removing duplicates: Sets can be used to store a collection of elements, automatically removing duplicates, making it useful for tasks such as checking for duplicates in a list.
 
@@ -213,9 +297,9 @@ Some of the use-cases of sets are:
 
 7. Filtering data: Sets can be used to filter data, such as removing duplicates from a list or selecting items that meet certain criteria.
 
-* **Stack** - A stack is a linear data structure that follows the Last-In-First-Out (LIFO) principle (meaning that the last item to be added to the stack is the first one to be removed). Stacks can be implemented using an array or a linked list. In both cases, the basic operations on a stack include push (adding an element to the top of the stack), pop (removing the top element), and peek (accessing the top element without removing it). Stacks are efficient data structures, with operations such as push and pop taking constant time, on average. However, they generally tend have a limited size and can only be used for specific types of problems.
+- **Stack** - A stack is a linear data structure that follows the Last-In-First-Out (LIFO) principle (meaning that the last item to be added to the stack is the first one to be removed). Stacks can be implemented using an array or a linked list. In both cases, the basic operations on a stack include push (adding an element to the top of the stack), pop (removing the top element), and peek (accessing the top element without removing it). Stacks are efficient data structures, with operations such as push and pop taking constant time, on average. However, they generally tend have a limited size and can only be used for specific types of problems.
 
-Some of the use-cases of stack are: 
+Some of the use-cases of stack are:
 
 1. Function call management: Stacks are used to manage function calls in programming languages, keeping track of the function calls that have been made and in what order. This is known as the call stack.
 
@@ -231,9 +315,9 @@ Some of the use-cases of stack are:
 
 7. Pathfinding algorithms: Stacks can be used in pathfinding algorithms, such as breadth-first search and depth-first search, to keep track of the nodes that need to be processed.
 
-* **Queue** - A queue is a linear data structure that follows the First-In-First-Out (FIFO) principle (meaning that the first item to be added to the queue is the first one to be removed). Queues can be implemented using an array or a linked list. In both cases, the basic operations on a queue include enqueue (adding an element to the end of the queue), dequeue (removing the front element), and peek (accessing the front element without removing it). Queues are efficient data structures, with operations such as enqueue and dequeue taking constant time, on average. However, they generally tend to have a limited size and can only be used for specific types of problems.
+- **Queue** - A queue is a linear data structure that follows the First-In-First-Out (FIFO) principle (meaning that the first item to be added to the queue is the first one to be removed). Queues can be implemented using an array or a linked list. In both cases, the basic operations on a queue include enqueue (adding an element to the end of the queue), dequeue (removing the front element), and peek (accessing the front element without removing it). Queues are efficient data structures, with operations such as enqueue and dequeue taking constant time, on average. However, they generally tend to have a limited size and can only be used for specific types of problems.
 
-Some of the use-cases of queue are: 
+Some of the use-cases of queue are:
 
 1. Task management: Queues can be used to manage tasks or jobs, such as scheduling print jobs or network requests.
 
@@ -249,10 +333,10 @@ Some of the use-cases of queue are:
 
 7. Asynchronous processing: Queues can be used to implement asynchronous processing, where tasks are added to a queue for processing in the background, allowing the main thread to continue executing.
 
-* **Array** - An array is a data structure that stores a collection of elements, each identified by a unique index or position. Arrays are used to store and manage large amounts of data, and they can be dynamically resized to accommodate changes in the size of the data set. Arrays are typically implemented as contiguous blocks of memory, allowing fast and efficient access to individual elements. This makes arrays particularly useful for operations that require frequent access to specific elements, such as search, sort, and manipulation of individual elements. Arrays have several advantages, including: Constant time access (Arrays provide constant time access to individual elements, making them ideal for applications where quick access to specific elements is important), Efficient memory utilization (Arrays store elements in contiguous blocks of memory, making efficient use of memory), Easy manipulation (Arrays allow for easy manipulation of individual elements, including insertion, deletion, and modification). However, arrays also have some disadvantages, such as: Fixed size (Arrays have a fixed size, making them less flexible than other data structures, such as linked lists, for handling changes in the size of the data set), Linear search time (Arrays have a linear search time, meaning that finding a specific element requires iterating through the entire array). Despite these limitations, arrays are widely used and remain a fundamental building block of computer programming and software engineering.
+- **Array** - An array is a data structure that stores a collection of elements, each identified by a unique index or position. Arrays are used to store and manage large amounts of data, and they can be dynamically resized to accommodate changes in the size of the data set. Arrays are typically implemented as contiguous blocks of memory, allowing fast and efficient access to individual elements. This makes arrays particularly useful for operations that require frequent access to specific elements, such as search, sort, and manipulation of individual elements. Arrays have several advantages, including: Constant time access (Arrays provide constant time access to individual elements, making them ideal for applications where quick access to specific elements is important), Efficient memory utilization (Arrays store elements in contiguous blocks of memory, making efficient use of memory), Easy manipulation (Arrays allow for easy manipulation of individual elements, including insertion, deletion, and modification). However, arrays also have some disadvantages, such as: Fixed size (Arrays have a fixed size, making them less flexible than other data structures, such as linked lists, for handling changes in the size of the data set), Linear search time (Arrays have a linear search time, meaning that finding a specific element requires iterating through the entire array). Despite these limitations, arrays are widely used and remain a fundamental building block of computer programming and software engineering.
 
 Some of the use-cases of array are:
- 
+
 1. Representing a list of items, such as the names of students in a class or products in a shopping cart.
 
 2. Performing mathematical operations, such as finding the average of a set of numbers or multiplying matrices.
@@ -262,10 +346,10 @@ Some of the use-cases of array are:
 4. Storing and retrieving data efficiently, as arrays provide constant time access to individual elements based on their index.
 
 5. Used in various algorithms, such as searching and sorting, as arrays can be easily manipulated to store and rearrange data.
- 
-* **HashMap** - A hash map, also known as a dictionary or associative array, is a data structure that maps keys to values. It uses a hash function to compute an index into an array of buckets or slots, from which the desired value can be found. The hash function takes the key as input and returns an integer, which is used as the index for the value in the array. When multiple keys have the same hash value, a collision occurs, and the hash map uses a collision resolution technique such as chaining (linked list) or open addressing (probing) to handle the collision. The main advantage of hash maps over other data structures such as arrays or linked lists is their constant-time average O(1) lookup time for finding values, making them very efficient for large data sets.
- 
- Some of the use-cases of hashmap are:
+
+- **HashMap** - A hash map, also known as a dictionary or associative array, is a data structure that maps keys to values. It uses a hash function to compute an index into an array of buckets or slots, from which the desired value can be found. The hash function takes the key as input and returns an integer, which is used as the index for the value in the array. When multiple keys have the same hash value, a collision occurs, and the hash map uses a collision resolution technique such as chaining (linked list) or open addressing (probing) to handle the collision. The main advantage of hash maps over other data structures such as arrays or linked lists is their constant-time average O(1) lookup time for finding values, making them very efficient for large data sets.
+
+Some of the use-cases of hashmap are:
 
 1. Caching: Hash maps can be used to implement caches, which store frequently used data to speed up access.
 
@@ -282,11 +366,11 @@ Some of the use-cases of array are:
 7. Associative Arrays: Hash maps can be used as associative arrays, where the keys are arbitrary values and the values are the data associated with those keys.
 
 8. Implementing Maps: Hash maps can be used to implement maps in programming languages, where keys can be of any type and values can be of any type.
-   
-* **Heap** - A heap is a tree-based data structure that satisfies the heap property, which states that the value of each node is either greater than or equal to (for a max-heap) or less than or equal to (for a min-heap) the values of its children. Heaps are commonly implemented as binary trees, where each node has at most two children. The root node of a heap is always the node with the largest (for a max-heap) or smallest (for a min-heap) value. Some of the operations that heap supports are: Insertion (To insert a new element into a heap, it is added to the end of the tree and then compared to its parent. If the heap property is violated, the elements are swapped until the property is restored), Extract Max/Min (To extract the maximum (for a max-heap) or minimum (for a min-heap) element from a heap, the root node is removed and replaced with the last element in the tree. The new root node is then compared to its children and swapped with the larger (for a max-heap) or smaller (for a min-heap) of the two until the heap property is restored), Delete (To delete an element from a heap, it can be replaced with a special value (such as -infinity) and then extracted), Peek (To view the maximum (for a max-heap) or minimum (for a min-heap) element in a heap without removing it, simply access the root node), Increase/Decrease Key (To change the value of an element in a heap, it is first removed and then reinserted with the new value), Merge (To merge two heaps into a single heap, the elements of one heap can be added to the other, and then the resulting heap can be rebuilt to restore the heap property).
 
- Some of the use-cases of heap are:
- 
+- **Heap** - A heap is a tree-based data structure that satisfies the heap property, which states that the value of each node is either greater than or equal to (for a max-heap) or less than or equal to (for a min-heap) the values of its children. Heaps are commonly implemented as binary trees, where each node has at most two children. The root node of a heap is always the node with the largest (for a max-heap) or smallest (for a min-heap) value. Some of the operations that heap supports are: Insertion (To insert a new element into a heap, it is added to the end of the tree and then compared to its parent. If the heap property is violated, the elements are swapped until the property is restored), Extract Max/Min (To extract the maximum (for a max-heap) or minimum (for a min-heap) element from a heap, the root node is removed and replaced with the last element in the tree. The new root node is then compared to its children and swapped with the larger (for a max-heap) or smaller (for a min-heap) of the two until the heap property is restored), Delete (To delete an element from a heap, it can be replaced with a special value (such as -infinity) and then extracted), Peek (To view the maximum (for a max-heap) or minimum (for a min-heap) element in a heap without removing it, simply access the root node), Increase/Decrease Key (To change the value of an element in a heap, it is first removed and then reinserted with the new value), Merge (To merge two heaps into a single heap, the elements of one heap can be added to the other, and then the resulting heap can be rebuilt to restore the heap property).
+
+Some of the use-cases of heap are:
+
 1. Priority Queues: Heaps can be used to implement priority queues, where the element with the highest (for a max-heap) or lowest (for a min-heap) priority is always removed first.
 
 2. Sorting Algorithms: Heapsort, a comparison-based sorting algorithm, uses a max-heap to sort an array of elements in ascending order.
@@ -303,33 +387,30 @@ Some of the use-cases of array are:
 
 8. Event-Driven Simulations: Heaps can be used in event-driven simulations, where events are stored in a priority queue and processed in order of priority.
 
-
 #### Advanced Data Structures
-    * Trees
-    * Binary Trees
-    * Binary Search Trees
-    * m-Array Trees
-    * B-Trees
-    * Binomial Heaps
-    * Fibonacci Heaps
-    * Red-Black Trees
-    * Graphs
+
+- Trees
+- Binary Trees
+- Binary Search Trees
+- m-Array Trees
+- B-Trees
+- Binomial Heaps
+- Fibonacci Heaps
+- Red-Black Trees
+- Graphs
 
 ## Design Patterns
 
->**Note: This section is under development**
+> **Note: This section is under development**
 
 ## Under development
 
-Interested in adding a new section or helping complete one in-progress?  Feel free to [Contribute](#contributing)!
-
+Interested in adding a new section or helping complete one in-progress? Feel free to [Contribute](#contributing)!
 
 ## Additional Resources
 
-* [Grokking the Object Oriented Design Interview](https://github.com/tssovi/grokking-the-object-oriented-design-interview)
+- [Grokking the Object Oriented Design Interview](https://github.com/tssovi/grokking-the-object-oriented-design-interview)
 
-## Inspiration 
+## Inspiration
 
 Inspired from [System Design Primer](https://github.com/donnemartin/system-design-primer)
-
-
