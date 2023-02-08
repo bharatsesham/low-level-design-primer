@@ -45,8 +45,8 @@ Feel free to submit pull requests to help:
   - [Step 1: Object Oriented Basics](#step-1-object-oriented-basics)
   - [Step 2: Object Oriented Analysis and Design](#step-2-object-oriented-analysis-and-design)
   - [Step 3: UML and Diagrams](#step-3-uml-and-diagrams)
-  - [Step 4: Distributed Systems Concepts]()
-  - [Step 5: Crptography]()
+  - [Step 4: Distributed Systems Concepts](#step-4-distributed-systems-concepts)
+  - [Step 5: Crptography](#step-5-cryptography)
   - [Next steps](#next-steps)
 - [Programming Logic](#programming-logic)
   - [Basics](#basics)
@@ -84,7 +84,6 @@ First, you'll need a basic understanding of OOPS concepts, learning about what t
 
 ### Step 5: Cryptography
 
-\
 Cryptography is the practice of securely communicating information by transforming it into an unreadable format (ciphertext) to prevent unauthorized access. Cryptography can be divided into two main categories: classical cryptography and modern cryptography. Classical cryptography uses techniques such as substitution ciphers and transposition ciphers, while modern cryptography uses mathematical algorithms and computer technology to provide stronger security. Some common applications of cryptography include secure communication over the internet, data protection, and digital signatures. Some of the concepts related to cryptography are:
 
 1.  Encryption: The process of transforming plaintext into an unreadable format (ciphertext) using an encryption algorithm and a key. The ciphertext can only be decrypted back into its original form using the same key. There are several types of encryption, including:
@@ -109,47 +108,33 @@ Cryptography is the practice of securely communicating information by transformi
 
 4.  Algorithm: A set of mathematical steps and rules used to encrypt and decrypt data. Cryptographic algorithms are divided into symmetric (using the same key for encryption and decryption) and asymmetric (using a pair of keys for encryption and decryption). Some of the commonly used cryptographic algorithms are:
 
-    - Symmetric Key Algorithms:
-
-      - Advanced Encryption Standard (AES)
-      - Data Encryption Standard (DES)
-      - Blowfish
-      - Twofish
-
-        <br/>
-
+    * Symmetric Key Algorithms:
+        * Advanced Encryption Standard (AES)
+        * Data Encryption Standard (DES)
+        * Blowfish
+        * Twofish
+        <br />
     - Asymmetric Key Algorithms (Public Key Cryptography):
-
-      - Rivest-Shamir-Adleman (RSA)
-      - Elliptic Curve Cryptography (ECC)
-      - Digital Signature Algorithm (DSA)
-      - Elliptic Curve Digital Signature Algorithm (ECDSA)
-
-        <br/>
-
-    - Hash Functions:
-
-      - Message Digest Algorithm 5 (MD5)
-      - Secure Hash Algorithm (SHA)
-      - SHA-256
-      - SHA-3
-
-        <br/>
-
+        - Rivest-Shamir-Adleman (RSA)
+        - Elliptic Curve Cryptography (ECC)
+        - Digital Signature Algorithm (DSA)
+        - Elliptic Curve Digital Signature Algorithm (ECDSA)
+        <br />
+    * Hash Functions:
+        * Message Digest Algorithm 5 (MD5)
+        * Secure Hash Algorithm (SHA)
+        * SHA-256
+        * SHA-3
+        <br />
     - Key Derivation Functions (KDFs):
-
       - PBKDF2 (Password-Based Key Derivation Function 2)
       - scrypt
       - Argon2
-
-        <br/>
-
-    - Stream Ciphers:
-      - RC4
-      - Salsa20
-      - ChaCha20
-
-    <br/>
+      <br />
+    * Stream Ciphers:
+        * RC4
+        * Salsa20
+        * ChaCha20
 
     These are just a few examples of cryptographic algorithms. The selection of the appropriate algorithm depends on the specific security requirements of the application and the amount of computational resources available. Cryptographic algorithms are constantly being improved and updated to provide stronger security, and new algorithms are being developed as the need for stronger security arises.
 
@@ -180,8 +165,6 @@ Cryptography is the practice of securely communicating information by transformi
     - Kerberos: A protocol used to securely authenticate users on computer networks.
 
     These are just a few examples of cryptographic protocols. The selection of the appropriate protocol depends on the specific security requirements of the communication or operation being performed.
-
-<br />
 
 ## Programming Logic
 
