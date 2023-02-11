@@ -246,8 +246,8 @@ In this topic, we will concentrate on the brains of the problem solution. While 
 
 Pseudo code for a sliding window algorithm:
 
-```
-function sliding_window(sequence, window_size):
+```python
+def sliding_window(sequence, window_size):
     n = length of sequence
     window_start = 0
     window_end = 0
@@ -276,8 +276,8 @@ function sliding_window(sequence, window_size):
 
 Pseudo code for a breadth first search algorithm on a graph:
 
-```
-BFS(graph G, start vertex s)
+```python
+def BFS(graph G, start vertex s)
   let Q be a queue
   mark s as visited
   Q.enqueue(s)
@@ -290,8 +290,8 @@ BFS(graph G, start vertex s)
 
 Pseudo code for a breadth first search algorithm on a tree:
 
-```
-BFS_on_tree(tree T, start node s)
+```python
+def BFS_on_tree(tree T, start node s)
   let Q be a queue
   mark s as visited
   Q.enqueue(s)
@@ -306,8 +306,8 @@ BFS_on_tree(tree T, start node s)
 
 Pseudo code for a depth first search algorithm on a graph:
 
-```
-DFS(G, v):
+```python
+def DFS(G, v):
     create a stack S
     mark v as visited
     push v onto S
@@ -323,8 +323,8 @@ DFS(G, v):
 
 Pseudo code for a depth first search algorithm on a tree:
 
-```
-DFS(T, v):
+```python
+def DFS(T, v):
     mark v as visited
     for each child u of v in T:
         if u is not visited:
@@ -375,26 +375,10 @@ In this example, graph is a representation of the directed acyclic graph as an a
 
 Data structures are a way of organizing and storing data in a computer program. There are several commonly used data structures in computer science, including:
 
-#### Basic Data Structuree
-
-##### Time Complexity
+#### Time Complexity
 
 <!-- Markdown Time Complexity Table Start -->
 
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:5px 20px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:5px 20px;word-break:normal;}
-.tg .tg-vd15{background-color:#FFFF10;text-align:center;vertical-align:middle}
-.tg .tg-ra3r{background-color:#3EC509;text-align:center;vertical-align:middle}
-.tg .tg-vd55{background-color:#F1ECB6;text-align:left;vertical-align:middle}
-.tg .tg-6fut{background-color:#F1ECB6;color:#000000;text-align:center;vertical-align:middle}
-.tg .tg-m3yf{background-color:#B1EA0D;text-align:center;vertical-align:middle}
-.tg .tg-0zjz{background-color:#FCAD29;text-align:center;vertical-align:middle}
-.tg .tg-vq3a{background-color:#D4D4D4;text-align:center;vertical-align:middle}
-</style>
 <table class="tg">
 <thead>
   <tr>
@@ -592,6 +576,8 @@ Data structures are a way of organizing and storing data in a computer program. 
 
 <!-- Markdown Time Complexity Table End -->
 
+#### Basic Data Structures
+
 The basic data structures used in computer science include:
 
 - **LinkedList** - A linked list is a linear data structure where each element, called a node, points to the next node in the list. It consists of a head, which points to the first node, and a tail, which points to the last node. The nodes contain a value and a reference to the next node. Linked lists can be used to implement various abstract data types like stacks, queues, and associative arrays. The advantage of linked lists over arrays is that elements can be efficiently inserted or removed without reallocation or reorganization of the entire structure because only a few links need to be changed.
@@ -743,6 +729,7 @@ Interested in adding a new section or helping complete one in-progress? Feel fre
 ## Additional Resources
 
 - [Grokking the Object Oriented Design Interview](https://github.com/tssovi/grokking-the-object-oriented-design-interview)
+- [Big-O Cheat Sheet](https://www.bigocheatsheet.com/)
 
 ## Inspiration
 
