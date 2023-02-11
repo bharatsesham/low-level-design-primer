@@ -332,22 +332,265 @@ DFS(T, v):
 
 ```
 
-10. Two Heaps
-11. Subsets
-12. Modified Binary Search
-13. Bitwise XOR
-14. Top ‘K’ Elements
-15. K-way Merge
-16. 0/1 Knapsack
-17. Fibonacci Numbers
-18. Palindromic Subsequence
-19. Longest Common Substring
+10. **Topological Sort** - Topological Sort is an algorithm used to linearize a directed acyclic graph (DAG) into a linear order of its vertices, such that for every directed edge (u, v), vertex u comes before vertex v in the linear order. In other words, it sorts the vertices of a graph such that all directed edges go from earlier vertices to later vertices in the linear order. Topological sort is commonly used to find a valid ordering of tasks, such as in scheduling problems, where some tasks must be completed before others can be started.
+
+There are several algorithms for performing a topological sort, but one of the most common is the depth-first search (DFS) based algorithm. The idea behind this algorithm is to visit all vertices in a graph, keeping track of which vertices have been visited, and to add a visited vertex to the linear order after all its outgoing edges have been processed.
+
+Pseudo code for a topological sort algorithm on a graph:
+
+```python
+def topological_sort(graph):
+    n = len(graph)
+    visited = [False] * n
+    stack = []
+
+    def dfs(u):
+        visited[u] = True
+        for v in graph[u]:
+            if not visited[v]:
+                dfs(v)
+        stack.append(u)
+
+    for i in range(n):
+        if not visited[i]:
+            dfs(i)
+
+    return list(reversed(stack))
+```
+
+In this example, graph is a representation of the directed acyclic graph as an adjacency list. The visited array keeps track of which vertices have been visited, and the stack is used to store the linear order of the vertices. The dfs function implements the depth-first search, visiting vertices and marking them as visited. The outer loop iterates over all vertices, calling dfs for each unvisited vertex. Finally, the linear order is returned as the reversed order of the stack, since vertices are added to the end of the stack during the depth-first search.
+
+11. Two Heaps
+12. Subsets
+13. Modified Binary Search
+14. Bitwise XOR
+15. Top ‘K’ Elements
+16. K-way Merge
+17. 0/1 Knapsack
+18. Fibonacci Numbers
+19. Palindromic Subsequence
+20. Longest Common Substring
 
 ### Data Structures
 
 Data structures are a way of organizing and storing data in a computer program. There are several commonly used data structures in computer science, including:
 
 #### Basic Data Structuree
+
+##### Time Complexity
+
+<!-- Markdown Time Complexity Table Start -->
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:5px 20px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:5px 20px;word-break:normal;}
+.tg .tg-vd15{background-color:#FFFF10;text-align:center;vertical-align:middle}
+.tg .tg-ra3r{background-color:#3EC509;text-align:center;vertical-align:middle}
+.tg .tg-vd55{background-color:#F1ECB6;text-align:left;vertical-align:middle}
+.tg .tg-6fut{background-color:#F1ECB6;color:#000000;text-align:center;vertical-align:middle}
+.tg .tg-m3yf{background-color:#B1EA0D;text-align:center;vertical-align:middle}
+.tg .tg-0zjz{background-color:#FCAD29;text-align:center;vertical-align:middle}
+.tg .tg-vq3a{background-color:#D4D4D4;text-align:center;vertical-align:middle}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-6fut" rowspan="3"><span style="background-color:#F1ECB6"> </span>Data Structure<span style="background-color:#F1ECB6"> </span></th>
+    <th class="tg-6fut" colspan="8"><span style="background-color:#F1ECB6"> </span>Time Complexity<span style="background-color:#F1ECB6"> </span></th>
+    <th class="tg-6fut"><span style="background-color:#F1ECB6"> </span>Space Complexity<span style="background-color:#F1ECB6"> </span></th>
+  </tr>
+  <tr>
+    <th class="tg-6fut" colspan="4"><span style="background-color:#F1ECB6"> </span>Average<span style="background-color:#F1ECB6"> </span></th>
+    <th class="tg-6fut" colspan="4"><span style="background-color:#F1ECB6"> </span>Worst<span style="background-color:#F1ECB6"> </span></th>
+    <th class="tg-6fut" rowspan="2"><span style="background-color:#F1ECB6"> </span>Worst<span style="background-color:#F1ECB6"> </span></th>
+  </tr>
+  <tr>
+    <th class="tg-6fut"><span style="background-color:#F1ECB6"> </span>Access<span style="background-color:#F1ECB6"> </span></th>
+    <th class="tg-6fut"><span style="background-color:#F1ECB6"> </span>Search<span style="background-color:#F1ECB6"> </span></th>
+    <th class="tg-6fut"><span style="background-color:#F1ECB6"> </span>Insertion<span style="background-color:#F1ECB6"> </span></th>
+    <th class="tg-6fut"><span style="background-color:#F1ECB6"> </span>Deletion<span style="background-color:#F1ECB6"> </span></th>
+    <th class="tg-6fut"><span style="background-color:#F1ECB6"> </span>Access<span style="background-color:#F1ECB6"> </span></th>
+    <th class="tg-6fut"><span style="background-color:#F1ECB6"> </span>Search<span style="background-color:#F1ECB6"> </span></th>
+    <th class="tg-6fut"><span style="background-color:#F1ECB6"> </span>Insertion<span style="background-color:#F1ECB6"> </span></th>
+    <th class="tg-6fut"><span style="background-color:#F1ECB6"> </span>Deletion<span style="background-color:#F1ECB6"> </span></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-vd55"><span style="background-color:#F1ECB6"> </span><a href="http://en.wikipedia.org/wiki/Array_data_structure" target="_blank" rel="noopener noreferrer">Array</a><span style="background-color:#F1ECB6"> </span></td>
+    <td class="tg-ra3r"><span style="background-color:#3EC509"> </span><span style="color:#000">Θ(1)</span><span style="background-color:#3EC509"> </span></td>
+    <td class="tg-vd15"><span style="background-color:#FFFF10"> </span><span style="color:#000">Θ(n)</span><span style="background-color:#FFFF10"> </span></td>
+    <td class="tg-vd15"><span style="background-color:#FFFF10"> </span><span style="color:#000">Θ(n)</span><span style="background-color:#FFFF10"> </span></td>
+    <td class="tg-vd15"><span style="background-color:#FFFF10"> </span><span style="color:#000">Θ(n)</span><span style="background-color:#FFFF10"> </span></td>
+    <td class="tg-ra3r"><span style="background-color:#3EC509"> </span><span style="color:#000">O(1)</span><span style="background-color:#3EC509"> </span></td>
+    <td class="tg-vd15"><span style="background-color:#FFFF10"> </span><span style="color:#000">O(n)</span><span style="background-color:#FFFF10"> </span></td>
+    <td class="tg-vd15"><span style="background-color:#FFFF10"> </span><span style="color:#000">O(n)</span><span style="background-color:#FFFF10"> </span></td>
+    <td class="tg-vd15"><span style="background-color:#FFFF10"> </span><span style="color:#000">O(n)</span><span style="background-color:#FFFF10"> </span></td>
+    <td class="tg-vd15"><span style="background-color:#FFFF10"> </span><span style="color:#000">O(n)</span><span style="background-color:#FFFF10"> </span></td>
+  </tr>
+  <tr>
+    <td class="tg-vd55"><span style="background-color:#F1ECB6"> </span><a href="http://en.wikipedia.org/wiki/Stack_(abstract_data_type)" target="_blank" rel="noopener noreferrer">Stack</a><span style="background-color:#F1ECB6"> </span></td>
+    <td class="tg-vd15"><span style="background-color:#FFFF10"> </span><span style="color:#000">Θ(n)</span><span style="background-color:#FFFF10"> </span></td>
+    <td class="tg-vd15"><span style="background-color:#FFFF10"> </span><span style="color:#000">Θ(n)</span><span style="background-color:#FFFF10"> </span></td>
+    <td class="tg-ra3r"><span style="background-color:#3EC509"> </span><span style="color:#000">Θ(1)</span><span style="background-color:#3EC509"> </span></td>
+    <td class="tg-ra3r"><span style="background-color:#3EC509"> </span><span style="color:#000">Θ(1)</span><span style="background-color:#3EC509"> </span></td>
+    <td class="tg-vd15"><span style="background-color:#FFFF10"> </span><span style="color:#000">O(n)</span><span style="background-color:#FFFF10"> </span></td>
+    <td class="tg-vd15"><span style="background-color:#FFFF10"> </span><span style="color:#000">O(n)</span><span style="background-color:#FFFF10"> </span></td>
+    <td class="tg-ra3r"><span style="background-color:#3EC509"> </span><span style="color:#000">O(1)</span><span style="background-color:#3EC509"> </span></td>
+    <td class="tg-ra3r"><span style="background-color:#3EC509"> </span><span style="color:#000">O(1)</span><span style="background-color:#3EC509"> </span></td>
+    <td class="tg-vd15"><span style="background-color:#FFFF10"> </span><span style="color:#000">O(n)</span><span style="background-color:#FFFF10"> </span></td>
+  </tr>
+  <tr>
+    <td class="tg-vd55"><span style="background-color:#F1ECB6"> </span><a href="http://en.wikipedia.org/wiki/Queue_(abstract_data_type)" target="_blank" rel="noopener noreferrer">Queue</a><span style="background-color:#F1ECB6"> </span></td>
+    <td class="tg-vd15"><span style="background-color:#FFFF10"> </span><span style="color:#000">Θ(n)</span><span style="background-color:#FFFF10"> </span></td>
+    <td class="tg-vd15"><span style="background-color:#FFFF10"> </span><span style="color:#000">Θ(n)</span><span style="background-color:#FFFF10"> </span></td>
+    <td class="tg-ra3r"><span style="background-color:#3EC509"> </span><span style="color:#000">Θ(1)</span><span style="background-color:#3EC509"> </span></td>
+    <td class="tg-ra3r"><span style="background-color:#3EC509"> </span><span style="color:#000">Θ(1)</span><span style="background-color:#3EC509"> </span></td>
+    <td class="tg-vd15"><span style="background-color:#FFFF10"> </span><span style="color:#000">O(n)</span><span style="background-color:#FFFF10"> </span></td>
+    <td class="tg-vd15"><span style="background-color:#FFFF10"> </span><span style="color:#000">O(n)</span><span style="background-color:#FFFF10"> </span></td>
+    <td class="tg-ra3r"><span style="background-color:#3EC509"> </span><span style="color:#000">O(1)</span><span style="background-color:#3EC509"> </span></td>
+    <td class="tg-ra3r"><span style="background-color:#3EC509"> </span><span style="color:#000">O(1)</span><span style="background-color:#3EC509"> </span></td>
+    <td class="tg-vd15"><span style="background-color:#FFFF10"> </span><span style="color:#000">O(n)</span><span style="background-color:#FFFF10"> </span></td>
+  </tr>
+  <tr>
+    <td class="tg-vd55"><span style="background-color:#F1ECB6"> </span><a href="http://en.wikipedia.org/wiki/Singly_linked_list#Singly_linked_lists" target="_blank" rel="noopener noreferrer">Singly-Linked List</a><span style="background-color:#F1ECB6"> </span></td>
+    <td class="tg-vd15"><span style="background-color:#FFFF10"> </span><span style="color:#000">Θ(n)</span><span style="background-color:#FFFF10"> </span></td>
+    <td class="tg-vd15"><span style="background-color:#FFFF10"> </span><span style="color:#000">Θ(n)</span><span style="background-color:#FFFF10"> </span></td>
+    <td class="tg-ra3r"><span style="background-color:#3EC509"> </span><span style="color:#000">Θ(1)</span><span style="background-color:#3EC509"> </span></td>
+    <td class="tg-ra3r"><span style="background-color:#3EC509"> </span><span style="color:#000">Θ(1)</span><span style="background-color:#3EC509"> </span></td>
+    <td class="tg-vd15"><span style="background-color:#FFFF10"> </span><span style="color:#000">O(n)</span><span style="background-color:#FFFF10"> </span></td>
+    <td class="tg-vd15"><span style="background-color:#FFFF10"> </span><span style="color:#000">O(n)</span><span style="background-color:#FFFF10"> </span></td>
+    <td class="tg-ra3r"><span style="background-color:#3EC509"> </span><span style="color:#000">O(1)</span><span style="background-color:#3EC509"> </span></td>
+    <td class="tg-ra3r"><span style="background-color:#3EC509"> </span><span style="color:#000">O(1)</span><span style="background-color:#3EC509"> </span></td>
+    <td class="tg-vd15"><span style="background-color:#FFFF10"> </span><span style="color:#000">O(n)</span><span style="background-color:#FFFF10"> </span></td>
+  </tr>
+  <tr>
+    <td class="tg-vd55"><span style="background-color:#F1ECB6"> </span><a href="http://en.wikipedia.org/wiki/Doubly_linked_list" target="_blank" rel="noopener noreferrer">Doubly-Linked List</a><span style="background-color:#F1ECB6"> </span></td>
+    <td class="tg-vd15"><span style="background-color:#FFFF10"> </span><span style="color:#000">Θ(n)</span><span style="background-color:#FFFF10"> </span></td>
+    <td class="tg-vd15"><span style="background-color:#FFFF10"> </span><span style="color:#000">Θ(n)</span><span style="background-color:#FFFF10"> </span></td>
+    <td class="tg-ra3r"><span style="background-color:#3EC509"> </span><span style="color:#000">Θ(1)</span><span style="background-color:#3EC509"> </span></td>
+    <td class="tg-ra3r"><span style="background-color:#3EC509"> </span><span style="color:#000">Θ(1)</span><span style="background-color:#3EC509"> </span></td>
+    <td class="tg-vd15"><span style="background-color:#FFFF10"> </span><span style="color:#000">O(n)</span><span style="background-color:#FFFF10"> </span></td>
+    <td class="tg-vd15"><span style="background-color:#FFFF10"> </span><span style="color:#000">O(n)</span><span style="background-color:#FFFF10"> </span></td>
+    <td class="tg-ra3r"><span style="background-color:#3EC509"> </span><span style="color:#000">O(1)</span><span style="background-color:#3EC509"> </span></td>
+    <td class="tg-ra3r"><span style="background-color:#3EC509"> </span><span style="color:#000">O(1)</span><span style="background-color:#3EC509"> </span></td>
+    <td class="tg-vd15"><span style="background-color:#FFFF10"> </span><span style="color:#000">O(n)</span><span style="background-color:#FFFF10"> </span></td>
+  </tr>
+  <tr>
+    <td class="tg-vd55"><span style="background-color:#F1ECB6"> </span><a href="http://en.wikipedia.org/wiki/Binary_search_tree" target="_blank" rel="noopener noreferrer">Binary Search Tree</a><span style="background-color:#F1ECB6"> </span></td>
+    <td class="tg-m3yf"><span style="background-color:#B1EA0D"> </span><span style="color:#000">Θ(log(n))</span><span style="background-color:#B1EA0D"> </span></td>
+    <td class="tg-m3yf"><span style="background-color:#B1EA0D"> </span><span style="color:#000">Θ(log(n))</span><span style="background-color:#B1EA0D"> </span></td>
+    <td class="tg-m3yf"><span style="background-color:#B1EA0D"> </span><span style="color:#000">Θ(log(n))</span><span style="background-color:#B1EA0D"> </span></td>
+    <td class="tg-m3yf"><span style="background-color:#B1EA0D"> </span><span style="color:#000">Θ(log(n))</span><span style="background-color:#B1EA0D"> </span></td>
+    <td class="tg-vd15"><span style="background-color:#FFFF10"> </span><span style="color:#000">O(n)</span><span style="background-color:#FFFF10"> </span></td>
+    <td class="tg-vd15"><span style="background-color:#FFFF10"> </span><span style="color:#000">O(n)</span><span style="background-color:#FFFF10"> </span></td>
+    <td class="tg-vd15"><span style="background-color:#FFFF10"> </span><span style="color:#000">O(n)</span><span style="background-color:#FFFF10"> </span></td>
+    <td class="tg-vd15"><span style="background-color:#FFFF10"> </span><span style="color:#000">O(n)</span><span style="background-color:#FFFF10"> </span></td>
+    <td class="tg-vd15"><span style="color:#000">O(n)</span><span style="background-color:#FFFF10"> </span></td>
+  </tr>
+  <tr>
+    <td class="tg-vd55"><span style="background-color:#F1ECB6"> </span><a href="http://en.wikipedia.org/wiki/Skip_list" target="_blank" rel="noopener noreferrer">Skip List</a><span style="background-color:#F1ECB6"> </span></td>
+    <td class="tg-m3yf"><span style="background-color:#B1EA0D"> </span><span style="color:#000">Θ(log(n))</span><span style="background-color:#B1EA0D"> </span></td>
+    <td class="tg-m3yf"><span style="background-color:#B1EA0D"> </span><span style="color:#000">Θ(log(n))</span><span style="background-color:#B1EA0D"> </span></td>
+    <td class="tg-m3yf"><span style="background-color:#B1EA0D"> </span><span style="color:#000">Θ(log(n))</span><span style="background-color:#B1EA0D"> </span></td>
+    <td class="tg-m3yf"><span style="background-color:#B1EA0D"> </span><span style="color:#000">Θ(log(n))</span><span style="background-color:#B1EA0D"> </span></td>
+    <td class="tg-vd15"><span style="background-color:#FFFF10"> </span><span style="color:#000">O(n)</span><span style="background-color:#FFFF10"> </span></td>
+    <td class="tg-vd15"><span style="background-color:#FFFF10"> </span><span style="color:#000">O(n)</span><span style="background-color:#FFFF10"> </span></td>
+    <td class="tg-vd15"><span style="background-color:#FFFF10"> </span><span style="color:#000">O(n)</span><span style="background-color:#FFFF10"> </span></td>
+    <td class="tg-vd15"><span style="background-color:#FFFF10"> </span><span style="color:#000">O(n)</span><span style="background-color:#FFFF10"> </span></td>
+    <td class="tg-0zjz"><span style="background-color:#FCAD29"> </span><span style="color:#000">O(n log(n))</span><span style="background-color:#FCAD29"> </span></td>
+  </tr>
+  <tr>
+    <td class="tg-vd55"><span style="background-color:#F1ECB6"> </span><a href="http://en.wikipedia.org/wiki/Hash_table" target="_blank" rel="noopener noreferrer">Hash Table</a><span style="background-color:#F1ECB6"> </span></td>
+    <td class="tg-vq3a"><span style="background-color:#D4D4D4"> </span><span style="color:#000">N/A</span><span style="background-color:#D4D4D4"> </span></td>
+    <td class="tg-ra3r"><span style="background-color:#3EC509"> </span><span style="color:#000">Θ(1)</span><span style="background-color:#3EC509"> </span></td>
+    <td class="tg-ra3r"><span style="background-color:#3EC509"> </span><span style="color:#000">Θ(1)</span><span style="background-color:#3EC509"> </span></td>
+    <td class="tg-ra3r"><span style="background-color:#3EC509"> </span><span style="color:#000">Θ(1)</span><span style="background-color:#3EC509"> </span></td>
+    <td class="tg-vq3a"><span style="background-color:#D4D4D4"> </span><span style="color:#000">N/A</span><span style="background-color:#D4D4D4"> </span></td>
+    <td class="tg-vd15"><span style="background-color:#FFFF10"> </span><span style="color:#000">O(n)</span><span style="background-color:#FFFF10"> </span></td>
+    <td class="tg-vd15"><span style="background-color:#FFFF10"> </span><span style="color:#000">O(n)</span><span style="background-color:#FFFF10"> </span></td>
+    <td class="tg-vd15"><span style="background-color:#FFFF10"> </span><span style="color:#000">O(n)</span><span style="background-color:#FFFF10"> </span></td>
+    <td class="tg-vd15"><span style="background-color:#FFFF10"> </span><span style="color:#000">O(n)</span><span style="background-color:#FFFF10"> </span></td>
+  </tr>
+  <tr>
+    <td class="tg-vd55"><span style="background-color:#F1ECB6"> </span><a href="https://en.wikipedia.org/wiki/Cartesian_tree" target="_blank" rel="noopener noreferrer">Cartesian Tree</a><span style="background-color:#F1ECB6"> </span></td>
+    <td class="tg-vq3a"><span style="background-color:#D4D4D4"> </span><span style="color:#000">N/A</span><span style="background-color:#D4D4D4"> </span></td>
+    <td class="tg-m3yf"><span style="background-color:#B1EA0D"> </span><span style="color:#000">Θ(log(n))</span><span style="background-color:#B1EA0D"> </span></td>
+    <td class="tg-m3yf"><span style="background-color:#B1EA0D"> </span><span style="color:#000">Θ(log(n))</span><span style="background-color:#B1EA0D"> </span></td>
+    <td class="tg-m3yf"><span style="background-color:#B1EA0D"> </span><span style="color:#000">Θ(log(n))</span><span style="background-color:#B1EA0D"> </span></td>
+    <td class="tg-vq3a"><span style="background-color:#D4D4D4"> </span><span style="color:#000">N/A</span><span style="background-color:#D4D4D4"> </span></td>
+    <td class="tg-vd15"><span style="background-color:#FFFF10"> </span><span style="color:#000">O(n)</span><span style="background-color:#FFFF10"> </span></td>
+    <td class="tg-vd15"><span style="background-color:#FFFF10"> </span><span style="color:#000">O(n)</span><span style="background-color:#FFFF10"> </span></td>
+    <td class="tg-vd15"><span style="background-color:#FFFF10"> </span><span style="color:#000">O(n)</span><span style="background-color:#FFFF10"> </span></td>
+    <td class="tg-vd15"><span style="background-color:#FFFF10"> </span><span style="color:#000">O(n)</span><span style="background-color:#FFFF10"> </span></td>
+  </tr>
+  <tr>
+    <td class="tg-vd55"><span style="background-color:#F1ECB6"> </span><a href="http://en.wikipedia.org/wiki/B_tree" target="_blank" rel="noopener noreferrer">B-Tree</a><span style="background-color:#F1ECB6"> </span></td>
+    <td class="tg-m3yf"><span style="background-color:#B1EA0D"> </span><span style="color:#000">Θ(log(n))</span><span style="background-color:#B1EA0D"> </span></td>
+    <td class="tg-m3yf"><span style="background-color:#B1EA0D"> </span><span style="color:#000">Θ(log(n))</span><span style="background-color:#B1EA0D"> </span></td>
+    <td class="tg-m3yf"><span style="background-color:#B1EA0D"> </span><span style="color:#000">Θ(log(n))</span><span style="background-color:#B1EA0D"> </span></td>
+    <td class="tg-m3yf"><span style="background-color:#B1EA0D"> </span><span style="color:#000">Θ(log(n))</span><span style="background-color:#B1EA0D"> </span></td>
+    <td class="tg-m3yf"><span style="background-color:#B1EA0D"> </span><span style="color:#000">O(log(n))</span><span style="background-color:#B1EA0D"> </span></td>
+    <td class="tg-m3yf"><span style="background-color:#B1EA0D"> </span><span style="color:#000">O(log(n))</span><span style="background-color:#B1EA0D"> </span></td>
+    <td class="tg-m3yf"><span style="background-color:#B1EA0D"> </span><span style="color:#000">O(log(n))</span><span style="background-color:#B1EA0D"> </span></td>
+    <td class="tg-m3yf"><span style="background-color:#B1EA0D"> </span><span style="color:#000">O(log(n))</span><span style="background-color:#B1EA0D"> </span></td>
+    <td class="tg-vd15"><span style="background-color:#FFFF10"> </span><span style="color:#000">O(n)</span><span style="background-color:#FFFF10"> </span></td>
+  </tr>
+  <tr>
+    <td class="tg-vd55"><span style="background-color:#F1ECB6"> </span><a href="http://en.wikipedia.org/wiki/Red-black_tree" target="_blank" rel="noopener noreferrer">Red-Black Tree</a><span style="background-color:#F1ECB6"> </span></td>
+    <td class="tg-m3yf"><span style="background-color:#B1EA0D"> </span><span style="color:#000">Θ(log(n))</span><span style="background-color:#B1EA0D"> </span></td>
+    <td class="tg-m3yf"><span style="background-color:#B1EA0D"> </span><span style="color:#000">Θ(log(n))</span><span style="background-color:#B1EA0D"> </span></td>
+    <td class="tg-m3yf"><span style="background-color:#B1EA0D"> </span><span style="color:#000">Θ(log(n))</span><span style="background-color:#B1EA0D"> </span></td>
+    <td class="tg-m3yf"><span style="background-color:#B1EA0D"> </span><span style="color:#000">Θ(log(n))</span><span style="background-color:#B1EA0D"> </span></td>
+    <td class="tg-m3yf"><span style="background-color:#B1EA0D"> </span><span style="color:#000">O(log(n))</span><span style="background-color:#B1EA0D"> </span></td>
+    <td class="tg-m3yf"><span style="background-color:#B1EA0D"> </span><span style="color:#000">O(log(n))</span><span style="background-color:#B1EA0D"> </span></td>
+    <td class="tg-m3yf"><span style="background-color:#B1EA0D"> </span><span style="color:#000">O(log(n))</span><span style="background-color:#B1EA0D"> </span></td>
+    <td class="tg-m3yf"><span style="background-color:#B1EA0D"> </span><span style="color:#000">O(log(n))</span><span style="background-color:#B1EA0D"> </span></td>
+    <td class="tg-vd15"><span style="background-color:#FFFF10"> </span><span style="color:#000">O(n)</span><span style="background-color:#FFFF10"> </span></td>
+  </tr>
+  <tr>
+    <td class="tg-vd55"><span style="background-color:#F1ECB6"> </span><a href="https://en.wikipedia.org/wiki/Splay_tree" target="_blank" rel="noopener noreferrer">Splay Tree</a><span style="background-color:#F1ECB6"> </span></td>
+    <td class="tg-vq3a"><span style="background-color:#D4D4D4"> </span><span style="color:#000">N/A</span><span style="background-color:#D4D4D4"> </span></td>
+    <td class="tg-m3yf"><span style="background-color:#B1EA0D"> </span><span style="color:#000">Θ(log(n))</span><span style="background-color:#B1EA0D"> </span></td>
+    <td class="tg-m3yf"><span style="background-color:#B1EA0D"> </span><span style="color:#000">Θ(log(n))</span><span style="background-color:#B1EA0D"> </span></td>
+    <td class="tg-m3yf"><span style="background-color:#B1EA0D"> </span><span style="color:#000">Θ(log(n))</span><span style="background-color:#B1EA0D"> </span></td>
+    <td class="tg-vq3a"><span style="background-color:#D4D4D4"> </span><span style="color:#000">N/A</span><span style="background-color:#D4D4D4"> </span></td>
+    <td class="tg-m3yf"><span style="background-color:#B1EA0D"> </span><span style="color:#000">O(log(n))</span><span style="background-color:#B1EA0D"> </span></td>
+    <td class="tg-m3yf"><span style="background-color:#B1EA0D"> </span><span style="color:#000">O(log(n))</span><span style="background-color:#B1EA0D"> </span></td>
+    <td class="tg-m3yf"><span style="background-color:#B1EA0D"> </span><span style="color:#000">O(log(n))</span><span style="background-color:#B1EA0D"> </span></td>
+    <td class="tg-vd15"><span style="background-color:#FFFF10"> </span><span style="color:#000">O(n)</span><span style="background-color:#FFFF10"> </span></td>
+  </tr>
+  <tr>
+    <td class="tg-vd55"><span style="background-color:#F1ECB6"> </span><a href="http://en.wikipedia.org/wiki/AVL_tree" target="_blank" rel="noopener noreferrer">AVL Tree</a><span style="background-color:#F1ECB6"> </span></td>
+    <td class="tg-m3yf"><span style="background-color:#B1EA0D"> </span><span style="color:#000">Θ(log(n))</span><span style="background-color:#B1EA0D"> </span></td>
+    <td class="tg-m3yf"><span style="background-color:#B1EA0D"> </span><span style="color:#000">Θ(log(n))</span><span style="background-color:#B1EA0D"> </span></td>
+    <td class="tg-m3yf"><span style="background-color:#B1EA0D"> </span><span style="color:#000">Θ(log(n))</span><span style="background-color:#B1EA0D"> </span></td>
+    <td class="tg-m3yf"><span style="background-color:#B1EA0D"> </span><span style="color:#000">Θ(log(n))</span><span style="background-color:#B1EA0D"> </span></td>
+    <td class="tg-m3yf"><span style="background-color:#B1EA0D"> </span><span style="color:#000">O(log(n))</span><span style="background-color:#B1EA0D"> </span></td>
+    <td class="tg-m3yf"><span style="background-color:#B1EA0D"> </span><span style="color:#000">O(log(n))</span><span style="background-color:#B1EA0D"> </span></td>
+    <td class="tg-m3yf"><span style="background-color:#B1EA0D"> </span><span style="color:#000">O(log(n))</span><span style="background-color:#B1EA0D"> </span></td>
+    <td class="tg-m3yf"><span style="background-color:#B1EA0D"> </span><span style="color:#000">O(log(n))</span><span style="background-color:#B1EA0D"> </span></td>
+    <td class="tg-vd15"><span style="background-color:#FFFF10"> </span><span style="color:#000">O(n)</span><span style="background-color:#FFFF10"> </span></td>
+  </tr>
+  <tr>
+    <td class="tg-vd55"><span style="background-color:#F1ECB6"> </span><a href="http://en.wikipedia.org/wiki/K-d_tree" target="_blank" rel="noopener noreferrer">KD Tree</a><span style="background-color:#F1ECB6"> </span></td>
+    <td class="tg-m3yf"><span style="background-color:#B1EA0D"> </span><span style="color:#000">Θ(log(n))</span><span style="background-color:#B1EA0D"> </span></td>
+    <td class="tg-m3yf"><span style="background-color:#B1EA0D"> </span><span style="color:#000">Θ(log(n))</span><span style="background-color:#B1EA0D"> </span></td>
+    <td class="tg-m3yf"><span style="background-color:#B1EA0D"> </span><span style="color:#000">Θ(log(n))</span><span style="background-color:#B1EA0D"> </span></td>
+    <td class="tg-m3yf"><span style="background-color:#B1EA0D"> </span><span style="color:#000">Θ(log(n))</span><span style="background-color:#B1EA0D"> </span></td>
+    <td class="tg-vd15"><span style="background-color:#FFFF10"> </span><span style="color:#000">O(n)</span><span style="background-color:#FFFF10"> </span></td>
+    <td class="tg-vd15"><span style="background-color:#FFFF10"> </span><span style="color:#000">O(n)</span><span style="background-color:#FFFF10"> </span></td>
+    <td class="tg-vd15"><span style="background-color:#FFFF10"> </span><span style="color:#000">O(n)</span><span style="background-color:#FFFF10"> </span></td>
+    <td class="tg-vd15"><span style="background-color:#FFFF10"> </span><span style="color:#000">O(n)</span><span style="background-color:#FFFF10"> </span></td>
+    <td class="tg-vd15"><span style="background-color:#FFFF10"> </span><span style="color:#000">O(n)</span><span style="background-color:#FFFF10"> </span></td>
+  </tr>
+</tbody>
+</table>
+
+<!-- Markdown Time Complexity Table End -->
 
 The basic data structures used in computer science include:
 
