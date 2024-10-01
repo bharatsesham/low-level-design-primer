@@ -731,6 +731,23 @@ Some of the use-cases of heap are:
 
 - Trees
 - Binary Trees
+<table>
+  <tr>
+    <td align="middle">
+      InOrder Traversal
+      <img src="https://github.com/bharatsesham/low-level-design-primer/blob/main/metadata/media/inOrder.gif" width="270" height="360"/>
+    </td>
+    <td align="middle">
+      PreOrder Traversal
+      <img src="https://github.com/bharatsesham/low-level-design-primer/blob/main/metadata/media/preOrder.gif" width="270" height="360"/>
+    </td> 
+    <td align="middle">
+      PostOrder Traversal
+      <img src="https://github.com/bharatsesham/low-level-design-primer/blob/main/metadata/media/postOrder.gif" width="270" height="360"/>
+    </td> 
+  </tr> 
+</table>
+
 - Binary Search Trees
 - m-Array Trees
 - B-Trees
