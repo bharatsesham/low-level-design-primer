@@ -272,7 +272,17 @@ def sliding_window(sequence, window_size):
 5. Merge Intervals
 6. Cyclic Sort
 7. In-place Reversal of a LinkedList
-8. **Breadth-First Search** - Breadth-First Search (BFS) is an algorithm for traversing or searching a tree, graph or other data structure in breadth-first order. It visits all the vertices of a graph or all the nodes of a tree at the same level before going deeper. BFS is used to find the shortest path between two nodes or to find all nodes within a certain distance from a starting node. It operates by visiting all neighbors of a node before visiting their neighbors, ensuring that it visits nodes in the order of increasing distance from the starting node.
+8. **Breadth-First Search**
+<table>
+  <tr>
+    <td valign="top" border="0px">
+Breadth-First Search (BFS) is an algorithm for traversing or searching a tree, graph or other data structure in breadth-first order. It visits all the vertices of a graph or all the nodes of a tree at the same level before going deeper. BFS is used to find the shortest path between two nodes or to find all nodes within a certain distance from a starting node. It operates by visiting all neighbors of a node before visiting their neighbors, ensuring that it visits nodes in the order of increasing distance from the starting node.
+
+</td>
+<td>
+<img src="https://github.com/bharatsesham/low-level-design-primer/blob/main/metadata/media/BFS_tree.gif" width="250" height="250"/>
+</td> </tr> </table>
+
 
 Pseudo code for a breadth first search algorithm on a graph:
 
@@ -302,9 +312,19 @@ def BFS_on_tree(tree T, start node s)
       Q.enqueue(w)
 ```
 
-9. **Depth First Search** - Depth First Search (DFS) is an algorithm for traversing and searching a graph or tree data structure. It starts at the root node and explores as far as possible along each branch before backtracking and visiting the next branch. The goal of DFS is to visit all the nodes of the graph or tree in a depth-first manner, i.e., visiting the children of a node before its siblings. The implementation of DFS can be done using a stack or through recursion. It is used in many applications, such as topological sorting, finding connected components, solving mazes and solving problems in artificial intelligence.
+9. **Depth First Search**
+<table>
+  <tr>
+    <td valign="top" border="0px">
+Depth First Search (DFS) is an algorithm for traversing and searching a graph or tree data structure. It starts at the root node and explores as far as possible along each branch before backtracking and visiting the next branch. The goal of DFS is to visit all the nodes of the graph or tree in a depth-first manner, i.e., visiting the children of a node before its siblings. The implementation of DFS can be done using a stack or through recursion. It is used in many applications, such as topological sorting, finding connected components, solving mazes and solving problems in artificial intelligence.
+
+</td>
+<td>
+<img src="https://github.com/bharatsesham/low-level-design-primer/blob/main/metadata/media/DFS_tree.gif" width="250" height="250"/>
+</td> </tr> </table>
 
 Pseudo code for a depth first search algorithm on a graph:
+
 
 ```python
 def DFS(G, v):
@@ -321,7 +341,7 @@ def DFS(G, v):
 
 ```
 
-Pseudo code for a depth first search algorithm on a tree:
+Pseudo code for a depth-first search algorithm on a tree:
 
 ```python
 def DFS(T, v):
@@ -331,6 +351,7 @@ def DFS(T, v):
             DFS(T, u)
 
 ```
+
 
 10. **Topological Sort** - Topological Sort is an algorithm used to linearize a directed acyclic graph (DAG) into a linear order of its vertices, such that for every directed edge (u, v), vertex u comes before vertex v in the linear order. In other words, it sorts the vertices of a graph such that all directed edges go from earlier vertices to later vertices in the linear order. Topological sort is commonly used to find a valid ordering of tasks, such as in scheduling problems, where some tasks must be completed before others can be started.
 
