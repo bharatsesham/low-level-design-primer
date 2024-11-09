@@ -324,10 +324,49 @@ def DFS(grid, i, j):
 
 ```
 3. Two Pointers
-4. Fast & Slow Pointers
-5. Merge Intervals
-6. Cyclic Sort
-7. In-place Reversal of a LinkedList
+<table>
+  <tr>
+    <td valign="top" border="0px">
+      The Two Pointers technique is an algorithmic strategy that involves using two indices (pointers) to iterate through a data structure, typically an array or string. This method is especially effective for solving problems that require searching for pairs or sequences that satisfy certain conditions in a sorted data set.
+    </td>
+  </tr>
+<tr>
+  <td align="center" border="0px">
+    2 Sum using Two-pointer
+
+  <img src="https://github.com/bharatsesham/low-level-design-primer/blob/main/metadata/media/Two_Pointer" width="760" height="110"/>
+  </td>
+</tr>
+</table>
+
+
+Pseudo code for an Two Pointer Technique:
+
+```
+function findPairs(array, targetSum):
+    left = 0
+    right = length of array - 1
+
+    while left < right:
+        leftValue = array[left]
+        rightValue = array[right]
+        sum = leftValue + rightValue
+
+        if sum == targetSum:
+            output "Found pair:", leftValue, rightValue
+            left = left + 1
+            right = right - 1
+        else if sum < targetSum:
+            left = left + 1  // Move left pointer to the right to increase sum
+        else:
+            right = right - 1  // Move right pointer to the left to decrease sum
+```
+
+5. Fast & Slow Pointers
+6. Merge Intervals
+7. Cyclic Sort
+8. In-place Reversal of a LinkedList
+   
 **8. Breadth-First Search**
 <table>
   <tr>
