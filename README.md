@@ -242,7 +242,24 @@ In this topic, we will concentrate on the brains of the problem solution. While 
 
 #### Interview Coding Patterns
 
-1. **Sliding Window** - The sliding window algorithm is a technique used to process sequences of elements, such as arrays or strings. It works by maintaining a "window" of elements, and moving this window along the sequence, processing the elements within the window at each step. The size of the window is determined by the specific problem that needs to be solved, and the processing of the elements within the window is determined by the algorithm's implementation. The Sliding Window pattern is a useful technique for solving many different types of problems, such as finding the longest substring with non-repeating characters, or the minimum window in a string containing all characters of another string.
+1. **Sliding Window**
+<table>
+  <tr>
+    <td valign="top" border="0px">
+The sliding window algorithm is a technique used to process sequences of elements, such as arrays or strings. It works by maintaining a "window" of elements, and moving this window along the sequence, processing the elements within the window at each step. The size of the window is determined by the specific problem that needs to be solved, and the processing of the elements within the window is determined by the algorithm's implementation. The Sliding Window pattern is a useful technique for solving many problems, such as finding the longest substring with non-repeating characters, or the minimum window in a string containing all characters of another string.
+    </td>
+  </tr>
+<tr>
+  <td align="center" border="0px">
+    Longest Substring Without Repeating Characters
+
+  <img src="https://github.com/bharatsesham/low-level-design-primer/blob/main/metadata/media/Sliding_Window.gif" width="760" height="120"/>
+  </td>
+</tr>
+</table>
+
+
+
 
 Pseudo code for a sliding window algorithm:
 
