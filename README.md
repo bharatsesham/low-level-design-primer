@@ -242,7 +242,7 @@ In this topic, we will concentrate on the brains of the problem solution. While 
 
 #### Interview Coding Patterns
 
-1. **Sliding Window**
+**1. Sliding Window**
 <table>
   <tr>
     <td valign="top" border="0px">
@@ -257,8 +257,6 @@ The sliding window algorithm is a technique used to process sequences of element
   </td>
 </tr>
 </table>
-
-
 
 
 Pseudo code for a sliding window algorithm:
@@ -283,13 +281,54 @@ def sliding_window(sequence, window_size):
     return result
 ```
 
-2. Islands (Matrix Traversal)
+**2. Islands (Matrix Traversal)**
+<table>
+  <tr>
+    <td valign="top" border="0px">
+The Islands problem involves finding the number of distinct islands in a 2D grid composed of '1's (land) and '0's (water). An island is formed by connecting adjacent lands horizontally or vertically (not diagonally). The goal is to count the number of such islands within the grid or something similar. This problem is a classic application of graph traversal algorithms like Depth First Search (DFS) or Breadth First Search (BFS). Each cell in the grid can be considered as a node in a graph, and edges exist between horizontally or vertically adjacent land cells. By traversing the grid and performing a DFS or BFS from each unvisited land cell, we can mark all connected land cells as part of the same island.
+  </td>
+    <td>
+<img src="https://github.com/bharatsesham/low-level-design-primer/blob/main/metadata/media/Island_Traversal.gif" width="285" height="285"/>
+</td> 
+</tr>
+</table>
+
+Pseudo code for an Island Traversal:
+
+```python
+def numIslands(grid):
+    if not grid:
+        return 0
+    number_of_islands = 0
+    rows = len(grid)
+    cols = len(grid[0])
+    for i in range(rows):
+        for j in range(cols):
+            if grid[i][j] == '1':
+                DFS(grid, i, j)
+                number_of_islands += 1
+    return number_of_islands
+
+def DFS(grid, i, j):
+    rows = len(grid)
+    cols = len(grid[0])
+    # Base case: check boundaries and if the cell is water or already visited
+    if i < 0 or i >= rows or j < 0 or j >= cols or grid[i][j] != '1':
+        return
+    grid[i][j] = '0'  # Mark the cell as visited by sinking the island
+    # Recursively visit all adjacent cells (up, down, left, right)
+    DFS(grid, i + 1, j)  # Down
+    DFS(grid, i - 1, j)  # Up
+    DFS(grid, i, j + 1)  # Right
+    DFS(grid, i, j - 1)  # Left
+
+```
 3. Two Pointers
 4. Fast & Slow Pointers
 5. Merge Intervals
 6. Cyclic Sort
 7. In-place Reversal of a LinkedList
-8. **Breadth-First Search**
+**8. Breadth-First Search**
 <table>
   <tr>
     <td valign="top" border="0px">
@@ -300,8 +339,7 @@ Breadth-First Search (BFS) is an algorithm for traversing or searching a tree, g
 <img src="https://github.com/bharatsesham/low-level-design-primer/blob/main/metadata/media/BFS_tree.gif" width="250" height="250"/>
 </td> </tr> </table>
 
-
-Pseudo code for a breadth first search algorithm on a graph:
+Pseudo code for a breadth-first search algorithm on a graph:
 
 ```python
 def BFS(graph G, start vertex s)
@@ -315,7 +353,7 @@ def BFS(graph G, start vertex s)
       Q.enqueue(w)
 ```
 
-Pseudo code for a breadth first search algorithm on a tree:
+Pseudo code for a breadth-first search algorithm on a tree:
 
 ```python
 def BFS_on_tree(tree T, start node s)
@@ -329,7 +367,7 @@ def BFS_on_tree(tree T, start node s)
       Q.enqueue(w)
 ```
 
-9. **Depth First Search**
+**9. Depth First Search**
 <table>
   <tr>
     <td valign="top" border="0px">
@@ -340,8 +378,7 @@ Depth First Search (DFS) is an algorithm for traversing and searching a graph or
 <img src="https://github.com/bharatsesham/low-level-design-primer/blob/main/metadata/media/DFS_tree.gif" width="250" height="250"/>
 </td> </tr> </table>
 
-Pseudo code for a depth first search algorithm on a graph:
-
+Pseudo code for a depth-first search algorithm on a graph:
 
 ```python
 def DFS(G, v):
@@ -370,9 +407,9 @@ def DFS(T, v):
 ```
 
 
-10. **Topological Sort** - Topological Sort is an algorithm used to linearize a directed acyclic graph (DAG) into a linear order of its vertices, such that for every directed edge (u, v), vertex u comes before vertex v in the linear order. In other words, it sorts the vertices of a graph such that all directed edges go from earlier vertices to later vertices in the linear order. Topological sort is commonly used to find a valid ordering of tasks, such as in scheduling problems, where some tasks must be completed before others can be started.
+**10. Topological Sort** - Topological Sort is an algorithm used to linearize a directed acyclic graph (DAG) into a linear order of its vertices, such that for every directed edge (u, v), vertex u comes before vertex v in the linear order. In other words, it sorts the vertices of a graph such that all directed edges go from earlier vertices to later vertices in the linear order. Topological sort is commonly used to find a valid ordering of tasks, such as in scheduling problems, where some tasks must be completed before others can be started.
 
-There are several algorithms for performing a topological sort, but one of the most common is the depth-first search (DFS) based algorithm. The idea behind this algorithm is to visit all vertices in a graph, keeping track of which vertices have been visited, and to add a visited vertex to the linear order after all its outgoing edges have been processed.
+There are several algorithms for performing a topological sort, but one of the most common is the depth-first search (DFS) based algorithm. The idea behind this algorithm is to visit all vertices in a graph, track which vertices have been visited, and add a visited vertex to the linear order after all its outgoing edges have been processed.
 
 Pseudo code for a topological sort algorithm on a graph:
 
