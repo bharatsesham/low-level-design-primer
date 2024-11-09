@@ -323,7 +323,7 @@ def DFS(grid, i, j):
     DFS(grid, i, j - 1)  # Left
 
 ```
-3. Two Pointers
+**3. Two Pointers**
 <table>
   <tr>
     <td valign="top" border="0px">
@@ -332,17 +332,17 @@ def DFS(grid, i, j):
   </tr>
 <tr>
   <td align="center" border="0px">
-    2 Sum using Two-pointer
+    2Sum using Two-pointer <br>
 
-  <img src="https://github.com/bharatsesham/low-level-design-primer/blob/main/metadata/media/Two_Pointer" width="760" height="110"/>
+  <img src="https://github.com/bharatsesham/low-level-design-primer/blob/main/metadata/media/Two_Pointer.gif" width="760" height="110"/>
   </td>
 </tr>
 </table>
 
 
-Pseudo code for an Two Pointer Technique:
+Pseudo code for a Two Pointer Technique:
 
-```
+```python
 function findPairs(array, targetSum):
     left = 0
     right = length of array - 1
