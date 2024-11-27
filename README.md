@@ -371,7 +371,7 @@ function findPairs(array, targetSum):
 <table>
   <tr>
     <td valign="top" border="0px">
-Breadth-First Search (BFS) is an algorithm for traversing or searching a tree, graph or other data structure in breadth-first order. It visits all the vertices of a graph or all the nodes of a tree at the same level before going deeper. BFS is used to find the shortest path between two nodes or to find all nodes within a certain distance from a starting node. It operates by visiting all neighbors of a node before visiting their neighbors, ensuring that it visits nodes in the order of increasing distance from the starting node.
+Breadth-First Search (BFS) is an algorithm for traversing or searching a tree, graph or other data structure in breadth-first order. It visits all the vertices of a graph or all the nodes of a tree at the same level before going deeper. BFS is used to find the shortest path between two nodes or to find all nodes within a certain distance from a starting node. It operates by visiting all neighbors of a node before visiting their neighbors and those neighbors' nodes, ensuring that it visits nodes in the order of increasing distance from the starting node.
 
 </td>
 <td>
